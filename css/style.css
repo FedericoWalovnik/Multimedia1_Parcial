@@ -114,14 +114,14 @@ body {
 }
 
 .line {
-  margin-top: 6vh;
+  margin-top: 4vh;
   background-color: rgb(196, 196, 196);
   width: 100%;
   height: 1px;
 }
 
 .content__details {
-  margin-top: 5vh;
+  margin-top: 4vh;
   display: flex;
   justify-content: space-between;
 }
@@ -161,4 +161,61 @@ body {
   position: absolute;
   right: 0;
   color: #000;
+}
+
+.cards {
+  position: absolute;
+  display: flex;
+  bottom: 3vh;
+  right: 3vh;
+  width: 70vw;
+  justify-content: space-between;
+}
+
+#newyork {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(44, 44, 44, 0) 70%),
+    url(../images/newyork.jpg);
+}
+
+#paris {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(44, 44, 44, 0) 70%),
+    url(../images/paris.jpg);
+}
+
+#sidney {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(44, 44, 44, 0) 70%),
+    url(../images/sidney.jpg);
+}
+
+#mexico {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(44, 44, 44, 0) 70%),
+    url(../images/mexico.jpg);
+}
+
+.cards__card {
+  position: relative;
+  width: 15vw;
+  height: 35vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 25px -9px rgba(0, 0, 0, 0.75);
+}
+
+.cards__text {
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+}
+
+.cards__title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.cards__details {
+  margin-top: 0.5rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
 }
