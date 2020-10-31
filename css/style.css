@@ -14,6 +14,44 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.navbar {
+  position: absolute;
+  top: 5vh;
+  right: 4vw;
+  width: 27vw;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.navbar__item {
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navbar__item::after {
+  content: "";
+  margin-top: 1.5px;
+  display: none;
+  height: 3px;
+  background: rgb(196, 88, 16);
+}
+
+.navbar__item:hover:after {
+  width: 75%;
+  display: block;
+}
+
+.navbar__item:hover {
+  color: #000;
+}
+
 .principal_image {
   flex: 0 0 40vw;
   height: 100vh;
@@ -69,15 +107,58 @@ body {
 .content__paragraph {
   font-size: 1.4rem;
   width: 80%;
-  margin-top: 2rem;
+  margin-top: 4vh;
   line-height: 2.2rem;
   font-weight: 500;
   color: rgb(153, 153, 153);
 }
 
 .line {
-  margin-top: 4vh;
+  margin-top: 6vh;
   background-color: rgb(196, 196, 196);
   width: 100%;
   height: 1px;
+}
+
+.content__details {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border-radius: 1000px;
+  border: 1.5px solid rgb(196, 88, 16);
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(196, 88, 16);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: rgb(196, 88, 16);
+}
+
+.content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  width: 14rem;
+  font-weight: 700;
+}
+
+.title3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(153, 153, 153);
+}
+
+.title3--bold {
+  position: absolute;
+  right: 0;
+  color: #000;
 }
