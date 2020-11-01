@@ -78,6 +78,56 @@ body {
   margin-left: 4vw;
 }
 
+.principal_image__details {
+  position: absolute;
+  bottom: 20vh;
+  margin-left: 4vw;
+}
+
+.principal_image__info {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.principal_image__people {
+  width: 15vw;
+  height: 9vh;
+  background-color: #000;
+  border-radius: 10000px;
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 10000px;
+}
+
+.play {
+  position: absolute;
+  top: 30vh;
+  left: 40%;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 10000px;
+  background-color: rgb(196, 88, 16);
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 22px solid #fff;
+  border-bottom: 13px solid transparent;
+  margin-left: 4px;
+}
+
 .content {
   background-color: rgb(247, 247, 247);
   display: flex;
