@@ -67,10 +67,54 @@ body {
   font-weight: 600;
 }
 
-.title {
+.title p {
+  font-weight: 700;
   font-size: 3rem;
   line-height: 6rem;
   margin-top: 4vh;
+}
+
+.innerTitle {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 6rem;
+  color: #000;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+  /*animation*/
+  animation: move 8s;
+  /*animation-iteration-count*/
+  animation-iteration-count: infinite;
+  /*animation-delay*/
+  animation-delay: 1s;
+}
+
+.title b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 6rem;
+}
+
+@keyframes move {
+  0% {
+    top: 0rem;
+  }
+  20% {
+    top: -6rem;
+  }
+  40% {
+    top: -12rem;
+  }
+  60% {
+    top: -18rem;
+  }
+  80% {
+    top: -24rem;
+  }
 }
 
 .principal_image__text {
