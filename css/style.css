@@ -7,6 +7,7 @@
 html {
   /*This defines what 1rem is*/
   font-size: 62.5%; /*1rem = 10px*/
+  overflow: hidden;
 }
 
 body {
@@ -90,19 +91,44 @@ body {
   font-weight: 600;
 }
 
-.principal_image__people {
+.principal_image__persons {
+  margin-top: 4vh;
   width: 15vw;
   height: 9vh;
   background-color: #000;
   border-radius: 10000px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .profile {
+  margin-left: 1rem;
   width: 3.5vw;
   height: 3.5vw;
   border-radius: 10000px;
+}
+
+.profile:first-child {
+  z-index: 3;
+}
+
+.profile:nth-child(2) {
+  z-index: 2;
+}
+
+.profile:last-child {
+  z-index: 1;
+}
+
+.profile:not(:first-child) {
+  margin-left: -1.5rem;
+}
+
+.principal_image__pluspeople {
+  color: rgb(156, 150, 150);
+  font-size: 2rem;
+  margin-right: 2.5rem;
 }
 
 .play {
@@ -250,6 +276,7 @@ body {
   background-size: cover;
   border-radius: 1rem;
   box-shadow: 6px 6px 25px -9px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
 .cards__text {
@@ -268,4 +295,19 @@ body {
   margin-top: 0.5rem;
   font-weight: 300;
   color: rgb(255, 255, 255);
+}
+
+.cards__pragraph {
+  color: #fff;
+  opacity: 0;
+  margin-bottom: -9rem;
+  transition: all 0.5s ease;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.cards__card:hover .cards__pragraph {
+  margin-bottom: 0;
+  opacity: 1;
+  transition: all 0.3s ease;
 }
